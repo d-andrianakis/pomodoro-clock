@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pomodoro Clock - FreeCodeCamp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/assets/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div id="root">
+  <div id="pen-description">
+  <h1 align="center">Pomodoro Clock - FreeCodeCamp</h1>
+  <h3 align="center">A pen by Dimitris Andrianakis</h3>
+  </div>
+  <div id="grid-container">
+    <div id="break-container">
+      <h3 id="break-label">Break Length</h3>
+      <div id="break-length"></div>
+      <button type="button" class="buttons" id="break-increment">
+        <i class="fa fa-chevron-circle-up"  data-toggle="tooltip" title="Increment by one minute"></i>
+      </button>
+      <button type="button" class="buttons" id="break-decrement">
+      <i class="fa fa-chevron-circle-down" data-toggle="tooltip" title="Decrease by one minute"></i>
+       </button>
+    </div>
+    <div id="session-container">
+      <h3 id="session-label">Session Length</h3>
+      <div id="session-length"></div>
+      <button type="button" class="buttons" id="session-increment"><i class="fa fa-chevron-circle-up" id="session-increment" data-toggle="tooltip" title="Increase session by 1 minutes"></i> 
+      </button>
+      <button type="button" class="buttons" id="session-decrement"><i class="fa fa-chevron-circle-down" data-toggle="tooltip" title="Decrease session by one minute"></i>
+      </button>
+    </div>
+    <div id="timer-container">
+      <h3 id="timer-label">Session</h3>
+      <div id="time-left">25:00</div>
+      <button id="start_stop"> 
+        <i class="fa fa-play-circle fa-pause-circle"></i>/
+        <i class="fa fa-pause-circle"></i>
+       </button>
+      <i id="reset" class="fa fa-refresh fa-spin" style="font-size:24px" data-toggle="tooltip" title="reset timer">&#xf021;</i>
+    </div>
+</div>
+  <audio id="beep">
+      <source src="https://www.tutorialrepublic.com/examples/audio/sea.mp3" type="audio/mpeg">
+    </audio>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

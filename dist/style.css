@@ -1,0 +1,62 @@
+*{
+  font-family: 'Comic Neue', cursive;
+  font-weight : bold;
+}
+body{
+  background-image: url(https://images.unsplash.com/photo-1507732052797-d22258ac2f96?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-repeat:no-repeat;
+    background-size: 100%;
+  background-position : center center;
+}
+#pen-description{
+  width : 60%;
+  margin-left : auto;
+  margin-right : auto;
+  background : #A5D6A7;
+  border-radius : 10px;
+  padding : 10px;
+  margin-bottom:10px;
+}
+#grid-container{
+  display:grid;
+  grid-template-columns:auto-auto;
+  background:#E0E0E0;
+  border-radius:10px;  
+  padding:10px;
+  width:60%;
+  opacity : 0.9;
+  margin-left:auto;
+  margin-right:auto;
+  justify-content:stetch;
+  justify-items:center;
+  text-align:center;
+  font-size:25px;
+}
+#break-container{
+  opacity:0.8;
+  padding:10px;
+  grid-column-start:1;
+  border-radius:10px;
+}
+#session-container{
+  opacity:0.8;
+  grid-column-start:3;
+  border-radius:10px;
+  padding:10px;
+}
+.buttons {
+  border : none;
+  outline : none;
+}
+#timer-container{
+  grid-column-start: span 2;
+  grid-row-start:3;
+  padding:10px;
+  margin-left:auto;
+}
+#start_stop{
+  background-color : #E0E0E0;
+  border-color : #000000;
+  border-radius : 10px;
+  outline : none;
+}
